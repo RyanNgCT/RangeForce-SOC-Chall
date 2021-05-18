@@ -1,0 +1,40 @@
+Return-Path: <tim.tram@contoso.com>
+Delivered-To: helpdesk@contoso.com
+Received: from contoso.com
+	by mh2 (Dovecot) with LMTP id YlMPBIq7LlxfOgEA3+YCqQ
+	for <tim.tram@contoso.com>; Tue, 18 May 2021 04:00:21 UTC
+Received: from contoso.com (unknown [127.0.0.1])
+	by contoso.com (Postfix) with ESMTP id 32EE4273C4
+	for <tim.tram@contoso.com>; Tue, 18 May 2021 04:00:21 UTC
+X-Virus-Scanned: amavisd-new at contoso.com
+X-Spam-Flag: YES
+X-Spam-Score: 9.006
+X-Spam-Level: *********
+X-Spam-Status: Yes, score=9.006 tagged_above=-9999 required=5
+	tests=[BAYES_99=4, DATE_IN_FUTURE_06_12=1, DOS_OUTLOOK_TO_MX=0.1,
+	ELKDSA_ZZ0105b=0.0001, FROM_IN_TO_AND_SUBJ=1, HELO_MISC_IP=0.241,
+	RDNS_NONE=2, SPF_SOFTFAIL=0.665] autolearn=no
+Received: from contoso.com ([127.0.0.1])
+	by contoso.com (contoso.com [127.0.0.1]) (amavisd-new, port 10024)
+	with ESMTP id Ury45C-_eMzT for <tim.tram@contoso.com>;
+	Tue, 18 May 2021 04:00:19 UTC
+Received: from [117.4.117.46] (unknown [117.4.117.46])
+	by contoso.com (Postfix) with ESMTP id 6AAD22739C
+	for <tim.tram@contoso.com>; Tue, 18 May 2021 04:00:18 UTC
+From: IT Helpdesk<helpdesk@contoso.com>
+To: <tim.tram@contoso.com>
+Reply-To: helpdesk@contozo.com
+Subject: Urgent Request!!!
+Date: Mon, 17 May 2021 21:00:21 UTC
+Message-ID: <004f01d4a40a$03686e64$d0b3818c$@r3w1nd.com>
+MIME-Version: 1.0
+Content-Type: text/plain;
+	charset="cp-850"
+Content-Transfer-Encoding: 8bit
+X-Mailer: Microsoft Outlook 14.0
+Thread-Index: Ac5ugbj22srs839h5ugbj22srs839h==
+Content-Language: en
+
+This is your IT department, we need to update the software on your computer, this is a bigger update which will take many hours to complete.
+To do that, we need your login credentials so we can perform the update during outside of office hours.
+Send us your credentials now or else we need to do this tomorrow morning during your working hours!!!
