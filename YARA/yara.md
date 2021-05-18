@@ -36,3 +36,23 @@ pe /home/student/Desktop/suspicious//85
 pe /home/student/Desktop/suspicious//72
 pe /home/student/Desktop/suspicious//13
 ```
+```
+student@desktop:~$ yara /home/student/Desktop/rules/malware.yar /home/student/Desktop/suspicious
+malware /home/student/Desktop/suspicious/64
+malware /home/student/Desktop/suspicious/77
+malware /home/student/Desktop/suspicious/172
+malware /home/student/Desktop/suspicious/54
+malware /home/student/Desktop/suspicious/112
+malware /home/student/Desktop/suspicious/128
+malware /home/student/Desktop/suspicious/192
+malware /home/student/Desktop/suspicious/153
+malware /home/student/Desktop/suspicious/152
+malware /home/student/Desktop/suspicious/57
+malware /home/student/Desktop/suspicious/62
+malware /home/student/Desktop/suspicious/125
+malware /home/student/Desktop/suspicious/97
+malware /home/student/Desktop/suspicious/95
+malware /home/student/Desktop/suspicious/140
+malware /home/student/Desktop/suspicious/185
+malware /home/student/Desktop/suspicious/23
+```
