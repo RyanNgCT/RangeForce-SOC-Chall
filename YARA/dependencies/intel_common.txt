@@ -295,3 +295,4 @@ SetFilePointer
 RegCloseKey
 strrchr
 USER32.dll
+too many length or distance symbols
