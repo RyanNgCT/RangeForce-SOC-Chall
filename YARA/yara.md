@@ -5,7 +5,9 @@ $ strings --encoding=s -n 7 1 | wc -l
 ```
 
 ```
-
+student@desktop:~$ yara -s /home/student/Desktop/rules/offset.yar /home/student/Desktop/sample/2
+a /home/student/Desktop/sample/2
+0x45534:$a: cmd.exe /c "%s"
 ```
 
 
