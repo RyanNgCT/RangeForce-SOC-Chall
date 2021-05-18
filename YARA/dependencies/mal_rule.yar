@@ -9,8 +9,7 @@ rule cmd_rule{
 
   strings:
     $cmd_rule = "cmd.exe /c \"%s\"
-    
-    
+      
   condition:
     $cmd_rule
 }
