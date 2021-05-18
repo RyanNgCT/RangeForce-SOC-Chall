@@ -9,8 +9,8 @@ rule cmd_rule{
 
   strings:
     $cmd_rule = "cmd.exe /c \"%s\"
-    $mb = {4D 5A}
+    
     
   condition:
-    $mb at 0 and $cmd_rule
+    $cmd_rule
 }
