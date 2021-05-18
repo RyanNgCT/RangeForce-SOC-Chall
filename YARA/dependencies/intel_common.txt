@@ -1,0 +1,297 @@
+WWWWWPj
+OpenSCManagerA
+;22dV::tN
+_local_unwind2
+2+( VPOL
+GlobalAlloc
+VirtualProtect
+@Pbmx~P
+FreeLibrary
+^Fr`+:&
+VirtualAlloc
+CreateDirectoryW
+>k_I[$
+msg/m_english.wnryF
+StartServiceA
+:*>B=Ox
+OpenMutexA
+GetFullPathNameA
+RegSetValueExA
+msg/m_french.wnry
+DeleteFileW
+QeTbF~ZiKw
+SbE\lHtQeF
+Q~TbFwZiK
+CreateFileW
+.?AVtype_info@@
+CryptDecrypt
+=j&&LZ66lA??~
+F~TbKwZi
+incorrect data check
+tasksche.exe
+MoveFileW
+unknown compression method
+??1exception@@UAE@XZ
+realloc
+SetCurrentDirectoryA
+WriteFile
+b4(X2;ey
+__p__commode
+MultiByteToWideChar
+LoadLibraryA
+\6tGuzF
+%%Jo..\r
+4$8,9-6'.6$:#?*1hHpXeA~SrZlN
+PPxD<<%
+kernel32.dll
+&%^W6).
+CryptImportKey
+HeapFree
+_except_handler3
+WaitForSingleObject
+V,YYG;~
+Ud|JZ|BE
+_CxxThrowException
+data error
+??0exception@@QAE@ABQBD@Z
+_acmdln
+OLEAUT32.dll
+;u>H4q7.c
+GetModuleHandleA
+incomplete literal/length tree
+OpenServiceA
+CryptReleaseContext
+attrib +h .
+inflate 1.1.3 Copyright 1995-1998 Mark Adler
+12t9YDPgwueZ9NyMgw519p7AA8isjr6SMw
+insufficient memory
+$`GnP+%<g
+TaskStart
+msg/m_chinese (traditional).wnry
+[_:L	x86
+ReadFile
+Bb..fO3
+qDj$bIU
+k|_^][Y
+invalid distance code
+wcsrchr
+GetFileSizeEx
+L)b7=a`
+__CxxFrameHandler
+_stricmp
+[4+G[Tnr
+13AM4VW2dhxYgXeQepoHkHSQuy6NgaEb94
+msg/m_croatian.wnry
+CMnQ,OOr
+swprintf
+SetFileAttributesW
+msg/m_czech.wnryn
+O|x8+^_
+HeapAlloc
+__setusermatherr
+GetWindowsDirectoryW
+115p7UMMngoj1pMvkpHijcRdfJNXj6LrLn
+LocalFileTimeToFileTime
+3/Vq9	=
+CryptAcquireContextA
+Jo7eQX%
+FindResourceA
+'B;1?5s
+IsBadReadPtr
+GetExitCodeProcess
+`.rdata
+#`?@/9P
+GetTempPathW
+invalid bit length repeat
+MSVCRT.dll
+o%%Jr..\$
+Global\MsWinZonesCacheCounterMutexA
+!`7RNkv
+__p___argc
+SetCurrentDirectoryW
+oversubscribed literal/length tree
+[l~y2U=
+msg/m_greek.wnry4n
+invalid block type
+<` Xu9g
+GetNativeSystemInfo
+CloseServiceHandle
+incomplete distance tree
+S	Q+c@x
+8d62ro/
+e	];F[p
+$@^ Y+kCM3
+X(N.K&9
+LeaveCriticalSection
+msg/m_bulgarian.wnry
+B~WJLuC
+invalid window size
+msg/m_dutch.wnry9
+GetCurrentDirectoryA
+Hy}V2l0e
+xxJo%%\r..8$
+NLc>zQy
+=iF-s4"t
+GetFileAttributesA
+_initterm
+2{0ONU	T8
+M{_rKG	C
+4XI"whG
+DeleteCriticalSection
+b.wnryP8
+GetFileSize
+GetFileAttributesW
+md)(:--
+WNcry@2ol7
+empty distance tree with lengths
+SizeofResource
+CopyFileA
+uo"usd/
+ciC [/K
+$0vJ<T9
+icacls . /grant Everyone:F /T /C /Q
+CryptDestroyKey
+oversubscribed distance tree
+MoveFileExW
+KfmZ@9q
+TerminateProcess
+stream end
+c.wnry%
+vi#<!d*S
+pfgGL`R
+_XcptFilter
+RegCreateKeyW
+[wS#C^6
+file error
+>nuGl=Cme4
+Microsoft Enhanced RSA and AES Cryptographic Provider
+msg/m_filipino.wnry
+incomplete dynamic bit lengths tree
+.?AVexception@@
+b=htZo&f
+KERNEL32.dll
+msg/m_chinese (simplified).wnryR9
+&&Lj66lZ??~A
+#E.(`MW
+cmd.exe /c "%s"
+j_1lTo`
+stream error
+&Lj&6lZ6?~A?
+WS2_32.dll
+SystemTimeToFileTime
+- unzip 0.15 Copyright 1998 Gilles Vollant
+??0exception@@QAE@ABV0@@Z
+,4$8'9-6:.6$1#?*XhHpSeA~NrZlE
+CloseHandle
+??2@YAPAXI@Z
+SetFileTime
+|~}%.15
+GetProcessHeap
+SE{^QC4
+Df""T~**;
+wsprintfA
+GetModuleFileNameA
+RegQueryValueExA
+2/O-_.X8w.+
+s<,kX5k
+4I_,eJi
+CreateServiceA
+f""D~**T
+_controlfp
+incompatible version
+dV22tN::
+_-TPsPUv: V
+IyEf [%
+__set_app_type
+InitializeCriticalSection
+Hjz%3(0
+.Vy_Fdk
+'Oh'-o]
+qr=_os*
+,MF3j;2@
+need dictionary
+CreateDirectoryA
+pq"b"V1
+=XnFQ-Il
+x%Jo%.\r.
+GetProcAddress
+CryptEncrypt
+MSVCP60.dll
+6P>YK^$r
+__p___argv
+sprintf
+MF2E0UG
+KPeJr}F
+CryptGenKey
+__getmainargs
+`1^9tdb
+mK~}k=P
+ADVAPI32.dll
+GetComputerNameW
+!This program cannot be run in DOS mode.
+WANACRY!
+incorrect header check
+_mbsstr
+Le"zE^f1
+msg/m_german.wnry
+"Df"*T~*
+SHELL32.dll
+8,4$6'9-$:.6*1#?pXhH~SeAlNrZbE
+LockResource
+#cMe&(;[Ip
+advapi32.dll
+Lj&&lZ66~A??
+L3koq_ >
+??1type_info@@UAE@XZ
+msg/m_danish.wnry
+^Md]"lN
+EGBkV6"rnL9
+?-3t/''
+GetStartupInfoA
+tJ9@0O(
+!A$U>=+
+2dV2:tN:
+tlHt Ht
+9d|!]`[
+GlobalFree
+V22dN::t
+nyMZ?%g;
+QeFbF~TiKwZ
+[d+?8d[
+EnterCriticalSection
+LoadResource
+msg/m_finnish.wnry~
+""Df**T~
+kEs##Q^!
+r;#r7iS|1
+s]R",XC(
+CreateFileA
+??3@YAXPAX@Z
+VirtualFree
+CreateProcessA
+invalid literal/length code
+oversubscribed dynamic bit lengths tree
+E65etRI\v4
+SetLastError
+*4q4[`V
++[\_JQ}
+"t=.|Vbq-
+invalid stored block lengths
+:95e`Il
+$8,4-6'96$:.?*1#HpXhA~SeZlNrSbE
+=1azT)8^y
+__p__fmode
+buffer error
+^Ml,L;0
+!#pHA[P
+*@~CS%1
+~|c<caKm2
+C77nYmm
+_adjust_fdiv
+7#z y,:
+e".E~^G
+pp|B>>q
+SetFilePointer
+RegCloseKey
+strrchr
+USER32.dll
