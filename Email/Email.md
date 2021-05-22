@@ -1,6 +1,8 @@
 # Email
 As a level 1 SOC Analyst, you want to test your skills concerning email threats to gauge your ability to find security threats associated with phishing.
 
+Evidence and Working Files can be found [here](https://github.com/RyanNgCT/RangeForce-SOC-Chall/tree/main/Email/dependencies).
+
 ## 1. Google Account
 
 Open Mozilla Thunderbird and find an email from Lana Banana with the title "This looks weird".
