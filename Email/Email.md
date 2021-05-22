@@ -8,7 +8,7 @@ Evidence and Working Files can be found [here](https://github.com/RyanNgCT/Range
 Open Mozilla Thunderbird and find an email from Lana Banana with the title "This looks weird".
 Lana has attached an email that she received and something has triggered her spider-sense. Can you figure out what's going with the email by investigating it?
 
-Alright, so this is my first time dealing with email forensics. I read online that we can use `Ctrl-U` to view the headers, which may contain valuable information.
+*Alright, so this is my first time dealing with email forensics. I read online that we can use `Ctrl-U` to view the headers, which may contain valuable information.*
 
 #### Question 1: 	What is the email's IP address of the origin?
 
