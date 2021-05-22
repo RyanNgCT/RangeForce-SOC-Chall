@@ -18,17 +18,19 @@ Received: from smtp.hughes.net (smtp.hughes.net [69.168.97.48])
 	for <lana.banana@contoso.com>; Tue May 18 04:00:21 UTC 2021
 ```
 
+![img](https://github.com/RyanNgCT/RangeForce-SOC-Chall/blob/main/Email/images%20for%20email/Screenshot%202021-05-18%20at%2012.09.52%20PM.png)
+
 Looking at the last SMTP hop, we can determine that the origin IP (not sender's IP) is `69.168.97.48`.
 
 #### Question 2: 	According to ipinfo.io, what is the the origin IP's company name?
 
-![img]()
+![img](https://github.com/RyanNgCT/RangeForce-SOC-Chall/blob/main/Email/images%20for%20email/Screenshot%202021-05-18%20at%2012.11.48%20PM.png)
 
 This was quite straightforward, we just have to paste the IP address obtained above into the IP address-related info provider. We will obtain `Syacor, Inc.` as a result of the company `name` field.
 
 #### Question 3: 	According to G Suite Toolbox, what is the SPF status?
 
-![img]()
+![img](https://github.com/RyanNgCT/RangeForce-SOC-Chall/blob/main/Email/images%20for%20email/Screenshot%202021-05-18%20at%2012.13.06%20PM.png)
 
 Again, the tool is provided so we just have to copy-paste the header (again open using `Ctrl-U`) into G Suite. Looking at the results, the SPF status is `softfail` (ignore the "With unknown IP" portion).
 
@@ -38,7 +40,7 @@ This can be found both in the email contents and the headers. It is `hxxp://rout
 
 #### Question 5: 	If you scan the malicious URL with urlscan.io, what type of attack is this?
 
-![img]()
+![img](https://github.com/RyanNgCT/RangeForce-SOC-Chall/blob/main/Email/images%20for%20email/Screenshot%202021-05-18%20at%2012.19.12%20PM.png)
 
 Using the tool listed, we can view without visitig the page that it presents a login screen rather similar to Google. We can thus confirm that a `phishing` attack is likely in this case. You can view the results at [this link](https://urlscan.io/result/0a087340-31aa-4e0e-953c-5bc9fd794837/)
 
@@ -64,14 +66,15 @@ In this case, this would be the **first** IP address on the list (beside `127.0.
 
 #### Question 2: According to MX Toolbox, what is the SPF Alignment result?
 
-![img]()
-![img]()
+![img](https://github.com/RyanNgCT/RangeForce-SOC-Chall/blob/main/Email/images%20for%20email/Screenshot%202021-05-22%20at%209.03.33%20PM.png)
+
+![img](https://github.com/RyanNgCT/RangeForce-SOC-Chall/blob/main/Email/images%20for%20email/Screenshot%202021-05-22%20at%209.03.58%20PM.png)
 
 Similar to the previous exercise, we can put the header in MXToolbox for analysis. The SPF alignment result is `Domain not found in SPF` (meaning that it is not registered and we should probably not trust it).
 
 #### Question 3: According to VirusTotal in the categorization tags at the top of the results page, which scripting language is used by this malware?
 
-![img]()
+![img](https://github.com/RyanNgCT/RangeForce-SOC-Chall/blob/main/Email/images%20for%20email/Screenshot%202021-05-22%20at%209.07.10%20PM.png)
 
 I kind of guessed this one. Since there was a pdf involved, I guessed that it had to do with `JavaScript`, but too bad pdfid and spidermonkey wasn't installed so we couldn't investigate further. (Source included [here](https://github.com/RyanNgCT/RangeForce-SOC-Chall/blob/main/Email/dependencies/invoice_pdf.js))
 
@@ -82,6 +85,8 @@ I kind of guessed this one. Since there was a pdf involved, I guessed that it ha
 Lana Banana got a threatening letter saying her account has been hacked. Help her determine is that really the case.
 
 #### Question: What is the origin "Received: from" FQDN?
+
+![img](https://github.com/RyanNgCT/RangeForce-SOC-Chall/blob/main/Email/images%20for%20email/Screenshot%202021-05-18%20at%2012.32.18%20PM.png)
 
 We can simply gain the answer to this from the `Received` field of the email file [here](https://github.com/RyanNgCT/RangeForce-SOC-Chall/blob/main/Email/dependencies/acc_hacked.eml) -- `serv1.youarehackzed.ga`.
 
@@ -122,9 +127,13 @@ Answer: `135.101.115.149`
 
 #### Question 2: According to MX Toolbox SuperTool, what is the actual FedEx mail server IP address?
 
+![img](https://github.com/RyanNgCT/RangeForce-SOC-Chall/blob/main/Email/images%20for%20email/Screenshot%202021-05-18%20at%2012.48.37%20PM.png)
+
 We can do a reverse search to determine the IP (probably `mx.fedex.com`) which is `204.135.242.200`.
 
 #### Question 3: If you scan the attached file with Virustotal, which CVE is being exploited?
+
+![img](https://github.com/RyanNgCT/RangeForce-SOC-Chall/blob/main/Email/images%20for%20email/Screenshot%202021-05-18%20at%2012.50.20%20PM.png)
 
 When we upload the rtf file attached to the suspicious email to the platform, we can see that the vulnerability is registered as `CVE-2010-3333`.
 
@@ -146,9 +155,13 @@ Answer: `117.4.117.46`.
 
 #### Question 2: If you reply to this email, who will actually receive it? 
 
+![img](https://github.com/RyanNgCT/RangeForce-SOC-Chall/blob/main/Email/images%20for%20email/Screenshot%202021-05-18%20at%2012.53.54%20PM.png)
+
 We can actually try this in Thunderbird and the destination email address is `helpdesk@contoso.com`.
 
 #### Question 3: According to G Suite Toolbox, what is the result of "delivered after"?
+
+![img](https://github.com/RyanNgCT/RangeForce-SOC-Chall/blob/main/Email/images%20for%20email/Screenshot%202021-05-18%20at%2012.56.09%20PM.png)
 
 The default delay period is `7 hours`.
 
@@ -171,8 +184,14 @@ Answer: `65.52.110.208`.
 
 #### Question 2: According to ipinfo.io, what is the the origin IP's company name?
 
+![img](https://github.com/RyanNgCT/RangeForce-SOC-Chall/blob/main/Email/images%20for%20email/Screenshot%202021-05-18%20at%2012.59.13%20PM.png)
+
 Answer: `Microsoft Corporation`.
 
 #### Question 3: According to MX Toolbox, what is the result of SPF Syntax Check and DKIM Syntax Check?
+
+![img](https://github.com/RyanNgCT/RangeForce-SOC-Chall/blob/main/Email/images%20for%20email/Screenshot%202021-05-22%20at%209.45.45%20PM.png)
+
+![img](https://github.com/RyanNgCT/RangeForce-SOC-Chall/blob/main/Email/images%20for%20email/Screenshot%202021-05-22%20at%209.46.53%20PM.png)
 
 Answer:  `The record is valid` (for both questions)
