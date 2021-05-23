@@ -19,3 +19,7 @@ Here's proof that I completed it and my badge!
 ![img](https://github.com/RyanNgCT/RangeForce-SOC-Chall/blob/main/SOC%20Challenge%20Badge.png)
 
 Verify it here: https://www.credly.com/earner/earned/badge/92fb4d78-f888-4afa-8638-b777a7f80f8c
+
+## Reflections
+
+I learnt a ton from this challenge, from new tools such as Email Analysis and Forensics, string analysis and signature detection with YARA and Splunk, which I do need more practice on. Detecting and Analysing IoCs were very fun and I sincerely want to thank [@RangeForce](https://github.com/RangeForce) for putting this together!
