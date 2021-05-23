@@ -29,19 +29,19 @@ suspicious/123:     RAR archive data, v5
 suspicious/124:     RIFF (little-endian) data, WAVE audio
 suspicious/125:     current ar archive
 suspicious/126:     data
-suspicious/127:     ELF 64-bit LSB shared object, x86-64, version 1 (SYSV), dynamically linked, interpreter /lib64/ld-linux-x86-64.so.2, BuildID[sha1]=64b58cd0c1096c023927be50d57433ac9cce43e6, for GNU/Linux 3.2.0, stripped
-suspicious/128:     ELF 64-bit LSB shared object, x86-64, version 1 (SYSV), dynamically linked, interpreter /lib64/ld-linux-x86-64.so.2, BuildID[sha1]=8dbe90dabcb03686af82845966ba507af42baeff, for GNU/Linux 3.2.0, stripped
+suspicious/127:     ELF 64-bit LSB shared object, x86-64, version 1 (SYSV), dynamically linked, interpreter /lib64/ld-linux-x86-64.so.2, BuildID[sha1]=64b58cd0c1096c023927be50d57433ac9cce43e6, for GNU/Linux 3.2.0, stripped    (git)
+suspicious/128:     ELF 64-bit LSB shared object, x86-64, version 1 (SYSV), dynamically linked, interpreter /lib64/ld-linux-x86-64.so.2, BuildID[sha1]=8dbe90dabcb03686af82845966ba507af42baeff, for GNU/Linux 3.2.0, stripped    (python 2.7)
 suspicious/129:     data
 suspicious/13:      data
 suspicious/130:     current ar archive
 suspicious/131:     GIF image data, version 89a, 9738 x
-suspicious/132:     ELF 64-bit LSB shared object, x86-64, version 1 (SYSV), dynamically linked, interpreter /lib64/ld-linux-x86-64.so.2, BuildID[sha1]=11e98ab64effe5cbea15c92224fc41c452a2a18a, for GNU/Linux 3.2.0, stripped
+suspicious/132:     ELF 64-bit LSB shared object, x86-64, version 1 (SYSV), dynamically linked, interpreter /lib64/ld-linux-x86-64.so.2, BuildID[sha1]=11e98ab64effe5cbea15c92224fc41c452a2a18a, for GNU/Linux 3.2.0, stripped    (Suspicious python 2.7 elf - 3/59)
 suspicious/133:     data
 suspicious/134:     PE32 executable (GUI) Intel 80386, for MS Windows
 suspicious/135:     data
 suspicious/136:     data
 suspicious/137:     PDF document, version 1.7
-suspicious/138:     Microsoft Office Document
+suspicious/138:     Microsoft Office Document  (Clean dll)
 suspicious/139:     RPM v93.135
 suspicious/14:      PE32 executable (DLL) (GUI) Intel 80386, for MS Windows
 suspicious/140:     PE32 executable (GUI) Intel 80386, for MS Windows
@@ -55,7 +55,7 @@ suspicious/147:     7-zip archive data, version 252.23
 suspicious/148:     Dalvik dex file version 035
 suspicious/149:     SQLite 3.x database, application id 3682206710, user version 874568484, last written using SQLite version 2122081084
 suspicious/15:      tcpdump capture file (big-endian) - version 64031.7860, capture length 1438641150)
-suspicious/150:     PE32 executable (GUI) Intel 80386, for MS Windows
+suspicious/150:     PE32 executable (GUI) Intel 80386, for MS Windows (Superkeypass.exe -- Wannacry)
 suspicious/151:     PDF document, version 1.4
 suspicious/152:     Rich Text Format data, version 1, unknown character set
 suspicious/153:     RIFF (little-endian) data, WAVE audio
