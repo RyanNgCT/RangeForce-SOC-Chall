@@ -110,7 +110,7 @@ Answer: `scp`
 
 #### Question 5: What is the password for the new malicious user?
 
-Answer: `password123@`
+Answer: `password123@` (found in one of the events)
 
 
 #### Question 6: How was the malicious user added to a group? (Format: Full command)
