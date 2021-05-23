@@ -156,6 +156,6 @@ The threat is `Virtool: Powershell/Empire.A`. We can ignore the other detection 
 Navigate to the corresponding directory and delete the `bat` file.
 
 ---
-Be warn that this is *real* malware!
+Be warned that this is *real* malware!
 
 *The suspicious batch file can be found [here](https://github.com/RyanNgCT/RangeForce-SOC-Chall/blob/main/Splunk/dependencies/LaunchPad.bat)*
