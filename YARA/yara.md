@@ -15,6 +15,11 @@ Analyze the strings in sample/1 to answer the question.
 ```
 $ strings --encoding=s -n 7 1 | wc -l
 ```
+
+![img](https://github.com/RyanNgCT/RangeForce-SOC-Chall/blob/main/YARA/images%20for%20yara/Screenshot%202021-05-18%20at%203.20.18%20PM.png)
+
+![img](https://github.com/RyanNgCT/RangeForce-SOC-Chall/blob/main/YARA/images%20for%20yara/Screenshot%202021-05-18%20at%205.22.33%20PM.png)
+
 Here we use the strings command (someone suggested I look up the [manual page](https://man7.org/linux/man-pages/man1/strings.1.html)). We use `encoding=s`to select `s = single-7-bit-byte characters (ASCII, ISO 8859, etc., default)` and `-n 7` for the minimum of 7 characters.
 
 The answer **varies each time** so it would be the ouput of the command. At the time of screenshot, it was `1767`.
@@ -38,6 +43,8 @@ student@desktop:~$ cd /home/student/Desktop/rules/ && nano offset.yar
 Now it's time to test your new Yara rule with the sample/2 file.
 
 #### Question: 	What is the offset of the string `cmd.exe /c "%s"` in the file sample/2? Provide an answer in the hex form prepended by 0x e.g. 0x1234.
+
+![img](https://github.com/RyanNgCT/RangeForce-SOC-Chall/blob/main/YARA/images%20for%20yara/Screenshot%202021-05-18%20at%205.22.53%20PM.png)
 
 ```
 student@desktop:~$ yara -s /home/student/Desktop/rules/offset.yar /home/student/Desktop/sample/2
@@ -129,3 +136,19 @@ We can also see if the files in sample or suspicious directories are malware by 
 ```
 student@desktop:~/Desktop$ file -r suspicious/* >| out.txt
 ```
+
+For sample `1`, it is malware of type `bin` (binary), probably a windows 32-bit version of WannaCry.
+
+![img](https://github.com/RyanNgCT/RangeForce-SOC-Chall/blob/main/YARA/images%20for%20yara/Screenshot%202021-05-23%20at%2012.46.00%20PM.png)
+
+For sample `2`, it is malware of type Trojan (which has got to do with what variants of WannaCry disguise themselves as.
+
+![img](https://github.com/RyanNgCT/RangeForce-SOC-Chall/blob/main/YARA/images%20for%20yara/Screenshot%202021-05-23%20at%2012.46.47%20PM.png)
+
+For sample `3`, it is the service that ensures persistence.
+
+![img](https://github.com/RyanNgCT/RangeForce-SOC-Chall/blob/main/YARA/images%20for%20yara/Screenshot%202021-05-23%20at%2012.47.15%20PM.png)
+
+Further analysis of one of the detected samples of `193` in the suspicious folder shows that it is probably a compressed executable that cannot be detected by Virustotal so in this case, yara will come in handy in detecting the strings used.
+
+![img](https://github.com/RyanNgCT/RangeForce-SOC-Chall/blob/main/YARA/images%20for%20yara/Screenshot%202021-05-23%20at%2012.51.52%20PM.png)
