@@ -190,7 +190,7 @@ malware /home/student/Desktop/suspicious/23
 
 ## Additional Investigations
 
-We can also see if the files in sample or suspicious directories are malware by uploading them to virustotal. I have used the command below to generate a list of the type of each of the files in the suspicious directory for your reference.
+We can also see if the files in sample or suspicious directories are malware by uploading them to virustotal. I have used the command below to generate a list of the type of each of the files in the suspicious directory for your reference. The output list can be found [here](https://github.com/RyanNgCT/RangeForce-SOC-Chall/blob/main/YARA/dependencies/suspicious_folder_fileinfo.txt)!
 
 ```
 student@desktop:~/Desktop$ file -r suspicious/* >| out.txt
