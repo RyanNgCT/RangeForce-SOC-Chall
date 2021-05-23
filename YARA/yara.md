@@ -37,7 +37,7 @@ For the yara rule, refer to [here](https://github.com/RyanNgCT/RangeForce-SOC-Ch
 ```
 student@desktop:~$ cd /home/student/Desktop/rules/ && nano offset.yar
 ```
-
+---
 
 ## 3. Offset
 Now it's time to test your new Yara rule with the sample/2 file.
@@ -53,6 +53,8 @@ a /home/student/Desktop/sample/2
 ```
 
 The offset is `0x45534`.
+
+---
 
 ## 4. Filetypes
 Your colleagues from the IT department have collected a number of suspicious files and placed a copy of them into the Desktop/suspicious directory.
@@ -94,6 +96,8 @@ pe /home/student/Desktop/suspicious//72
 pe /home/student/Desktop/suspicious//13
 ```
 
+---
+
 ## 5. Detect the Malware
 You have gotten a list of strings commonly present in the malware from a threat intelligence community online. These strings are found in the file Desktop/intel/strings.txt.
 
@@ -127,7 +131,7 @@ malware /home/student/Desktop/suspicious/140
 malware /home/student/Desktop/suspicious/185
 malware /home/student/Desktop/suspicious/23
 ```
-
+---
 
 ## Additional Investigations
 
