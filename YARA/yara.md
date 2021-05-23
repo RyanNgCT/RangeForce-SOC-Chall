@@ -208,10 +208,10 @@ For sample `3`, it is the service that ensures persistence.
 
 ![img](https://github.com/RyanNgCT/RangeForce-SOC-Chall/blob/main/YARA/images%20for%20yara/Screenshot%202021-05-23%20at%2012.47.15%20PM.png)
 
-Further analysis of one of the detected samples of `193` in the suspicious folder shows that it is probably a compressed executable that cannot be detected by Virustotal so in this case, yara will come in handy in detecting the strings used.
+Further analysis of one of the detected samples of `193` in the suspicious folder shows that it is probably a compressed executable that cannot be detected by Virustotal so in this case, yara will come in handy in detecting the strings used. (tested with `pe.yar`)
 
 ![img](https://github.com/RyanNgCT/RangeForce-SOC-Chall/blob/main/YARA/images%20for%20yara/Screenshot%202021-05-23%20at%2012.51.52%20PM.png)
 
-I also analysed `101`, which using the file command appeared to be `PE32 executable (DLL) (GUI) Intel 80386, for MS Windows` and when I uploaded it, it was indeed linked as a DLL related to the WannaCry ransomware.
+I also analysed `101`, which using the file command appeared to be `PE32 executable (DLL) (GUI) Intel 80386, for MS Windows` and when I uploaded it, it was indeed linked as a DLL related to the WannaCry ransomware. (tested with `malware.yar`)
 
 ![img](https://github.com/RyanNgCT/RangeForce-SOC-Chall/blob/main/YARA/images%20for%20yara/Screenshot%202021-05-23%20at%201.11.15%20PM.png)
