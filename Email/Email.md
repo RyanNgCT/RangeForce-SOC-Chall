@@ -125,7 +125,7 @@ Answer: `133.242.140.203`.
 
 ### Additional Exploration
 
-Additionally, using MXToolbox, we get a SPF status of `SPF Record not published`, which suggests it is suspicious. Results [here](https://mxtoolbox.com/Public/Tools/EmailHeaders.aspx?huid=47f26f02-5bb7-435b-b3f0-af286d2aa77c).
+Additionally, using MXToolbox, we get a SPF status of `No SPF record found`, which suggests it is suspicious. Results [here](https://mxtoolbox.com/Public/Tools/EmailHeaders.aspx?huid=47f26f02-5bb7-435b-b3f0-af286d2aa77c).
 
 ![img](https://github.com/RyanNgCT/RangeForce-SOC-Chall/blob/main/Email/images%20for%20email/Screenshot%202021-05-23%20at%203.05.41%20PM.png)
 
