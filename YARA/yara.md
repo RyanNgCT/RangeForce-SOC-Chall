@@ -120,3 +120,12 @@ malware /home/student/Desktop/suspicious/140
 malware /home/student/Desktop/suspicious/185
 malware /home/student/Desktop/suspicious/23
 ```
+
+
+## Additional Investigations
+
+We can also see if the files in sample or suspicious directories are malware by uploading them to virustotal. I have used the command below to generate a list of the type of each of the files in the suspicious directory for your reference.
+
+```
+student@desktop:~/Desktop$ file -r suspicious/* >| out.txt
+```
