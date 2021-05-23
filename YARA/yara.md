@@ -1,8 +1,43 @@
-# YARA
+# Finding Patterns with Yara Challenge
+
+It is early 2017 and there is chatter on security forums about new malware spreading around like wildfire. You have gotten hold of some samples of the malware. Your goal is to analyze it and prepare yourself to be able to detect it in the future.
+
+## 1. Strings
+
+The samples are located in the /home/student/Desktop/sample directory and aptly named 1, 2 and 3.
+
+Perform string analysis on the files and try to look for rare strings that might be unique to the malware.
+
+Analyze the strings in sample/1 to answer the question.
+
+#### Question: How many sequences of printable characters with the minimum length of 7 are there in the file sample/1? Assume printable characters to be single-7-bit-byte characters (ASCII, ISO 8859, etc.), including tab and space characters but no other whitespace characters.
 
 ```
 $ strings --encoding=s -n 7 1 | wc -l
 ```
+Here we use the strings command (someone suggested I look up the [manual page](https://man7.org/linux/man-pages/man1/strings.1.html)). We use `encoding=s`to select `s = single-7-bit-byte characters (ASCII, ISO 8859, etc., default)` and `-n 7` for the minimum of 7 characters.
+
+The answer **varies each time** so it would be the ouput of the command. At the time of screenshot, it was `1767`.
+
+---
+
+## 2. Simple Rule
+
+During the analysis, you noticed that there was an interesting string `cmd.exe /c "%s"`. You want to detect this in the other sample files with a Yara rule.
+
+#### Question: Write a Yara rule to detect the presence of the string `cmd.exe /c "%s"`. Save the rule into the `/home/student/Desktop/rules/offset.yar` file.
+
+For the yara rule, refer to [here](https://github.com/RyanNgCT/RangeForce-SOC-Chall/blob/main/YARA/dependencies/offset.yar). 
+
+```
+student@desktop:~$ cd /home/student/Desktop/rules/ && nano offset.yar
+```
+
+
+## 3. Offset
+Now it's time to test your new Yara rule with the sample/2 file.
+
+#### Question: 	What is the offset of the string `cmd.exe /c "%s"` in the file sample/2? Provide an answer in the hex form prepended by 0x e.g. 0x1234.
 
 ```
 student@desktop:~$ yara -s /home/student/Desktop/rules/offset.yar /home/student/Desktop/sample/2
@@ -10,6 +45,21 @@ a /home/student/Desktop/sample/2
 0x45534:$a: cmd.exe /c "%s"
 ```
 
+The offset is `0x45534`.
+
+## 4. Filetypes
+Your colleagues from the IT department have collected a number of suspicious files and placed a copy of them into the Desktop/suspicious directory.
+
+You need to check how many of the files are Windows executables (PE file format), but there are too many files to analyze manually. You can leverage the power of Yara to simplify your work.
+
+#### Question: Write a Yara rule capable of detecting files that have a PE file format in the `/home/student/Desktop/suspicious` directory. Save the rule into the `/home/student/Desktop/rules/pe.yar` file.
+
+For the yara rule, refer to [here](https://github.com/RyanNgCT/RangeForce-SOC-Chall/blob/main/YARA/dependencies/pe.yar). 
+
+```
+student@desktop:~$ cd /home/student/Desktop/suspicious/ && nano pe.yar
+```
+We can then test the rule out by running it on the samples in the `suspicious` directory.
 
 ```
 student@desktop:~$ yara /home/student/Desktop/rules/pe.yar /home/student/Desktop/suspicious/
@@ -36,6 +86,16 @@ pe /home/student/Desktop/suspicious//85
 pe /home/student/Desktop/suspicious//72
 pe /home/student/Desktop/suspicious//13
 ```
+
+## 5. Detect the Malware
+You have gotten a list of strings commonly present in the malware from a threat intelligence community online. These strings are found in the file Desktop/intel/strings.txt.
+
+Create a Yara rule out of these strings to detect the malware. You can also leverage the knowledge from previous sample analysis. Figure out how many files in the Desktop/suspicious directory are this malware.
+
+Create the rule file into the Desktop/rules directory and name the file malware.yar.
+
+#### Question:  Write a Yara rule capable of detecting files that are actually malware in the /home/student/Desktop/suspicious directory. Create the Yara rule from the strings in /home/student/Desktop/intel/strings.txt to detect the malware. Save the rule into the /home/student/Desktop/rules/malware.yar file.
+
 ```
 student@desktop:~$ yara /home/student/Desktop/rules/malware.yar /home/student/Desktop/suspicious
 malware /home/student/Desktop/suspicious/64
