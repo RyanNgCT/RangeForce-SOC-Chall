@@ -37,6 +37,27 @@ For the yara rule, refer to [here](https://github.com/RyanNgCT/RangeForce-SOC-Ch
 ```
 student@desktop:~$ cd /home/student/Desktop/rules/ && nano offset.yar
 ```
+
+In nano, we type:
+
+```
+rule cmd_rule{
+//meta is optional
+  meta:
+    author: "RyanNgCT"
+    purpose: "cmd yara rule for RangeForce SOC Challenge Level 2 Q2"
+
+  strings:
+    $cmd_rule = "cmd.exe /c \"%s\"
+      
+  condition:
+    $cmd_rule
+}
+```
+ In this case we need to escape the quotes in the command. When we save it, we should get a screen that looks like this (checkmark beside Part name):
+ 
+ ![img](https://github.com/RyanNgCT/RangeForce-SOC-Chall/blob/main/YARA/images%20for%20yara/Screenshot%202021-05-18%20at%205.22.44%20PM.png)
+
 ---
 
 ## 3. Offset
@@ -68,6 +89,21 @@ For the yara rule, refer to [here](https://github.com/RyanNgCT/RangeForce-SOC-Ch
 ```
 student@desktop:~$ cd /home/student/Desktop/suspicious/ && nano pe.yar
 ```
+
+In nano, we type:
+
+```
+rule pe {
+        strings:
+                $mb = {4D 5A}
+        condition:
+                $mb at 0
+}
+```
+
+`4D 5A` is the hexadecimal equivalent of the `MZ` magic bytes at the start, which is used to identify Windows portable executables.
+
+
 We can then test the rule out by running it on the samples in the `suspicious` directory.
 
 ```
@@ -108,6 +144,25 @@ Create the rule file into the Desktop/rules directory and name the file malware.
 #### Question:  Write a Yara rule capable of detecting files that are actually malware in the /home/student/Desktop/suspicious directory. Create the Yara rule from the strings in /home/student/Desktop/intel/strings.txt to detect the malware. Save the rule into the /home/student/Desktop/rules/malware.yar file.
 
 So in this case we have to use the strings (IOCs) given in [intel/strings.txt](https://github.com/RyanNgCT/RangeForce-SOC-Chall/blob/main/YARA/dependencies/intel_common.txt) in our yara rule constructed [here](https://github.com/RyanNgCT/RangeForce-SOC-Chall/blob/main/YARA/dependencies/malware.yar). Besides that we also need to be aware of the `MZ` header.
+
+In nano, we type:
+
+```
+rule malware{ 
+        meta:
+                author: "RyanNgCT"
+                purpose: "malware (wannacry) yara rule for RangeForce SOC Challenge Level 2 Q5"
+
+        strings:
+                $a = "inflate 1.1.3 Copyright 1995-1998 Mark Adler"
+                $b = "msg/m_chinese (traditional).wnry"
+                $mb  = {4D 5A}
+        condition:
+                $mb at 0 and $a and $b
+}
+```
+
+I chose this 2 strings since I was familar with them while doing my school malware module assigments, which are covered more in-depth [here](https://github.com/RyanNgCT/WannaCryAnalysis)! The `inflate` program is used when the malware is run dynamically in memory and the `.wnry` extension is a signature unique to the WannaCry family of Ransomwares.
 
 Now we will run the yara rule to check which artifacts contain these strings and are thus likely the samples.
 
