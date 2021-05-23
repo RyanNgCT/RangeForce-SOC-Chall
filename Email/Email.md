@@ -8,7 +8,7 @@ Evidence and Working Files can be found [here](https://github.com/RyanNgCT/Range
 Open Mozilla Thunderbird and find an email from Lana Banana with the title "This looks weird".
 Lana has attached an email that she received and something has triggered her spider-sense. Can you figure out what's going with the email by investigating it?
 
-*Alright, so this is my first time dealing with email forensics. I read online that we can use `Ctrl-U` to view the headers, which may contain valuable information.*
+*Alright, so this is my first time dealing with email forensics and analysis. I read online that we can use `Ctrl-U` to view the headers, which may contain valuable information.*
 
 #### Question 1: 	What is the email's IP address of the origin?
 
@@ -28,7 +28,7 @@ Looking at the last SMTP hop, we can determine that the origin IP (not sender's 
 
 ![img](https://github.com/RyanNgCT/RangeForce-SOC-Chall/blob/main/Email/images%20for%20email/Screenshot%202021-05-18%20at%2012.11.48%20PM.png)
 
-This was quite straightforward, we just have to paste the IP address obtained above into the IP address-related info provider. We will obtain `Syacor, Inc.` as a result of the company `name` field.
+This was quite straightforward, we just have to paste the IP address obtained above into the IP address-related info provider. We will obtain `Synacor, Inc.` as a result of the company `name` field.
 
 #### Question 3: 	According to G Suite Toolbox, what is the SPF status?
 
@@ -44,7 +44,7 @@ This can be found both in the email contents and the headers. It is `hxxp://rout
 
 ![img](https://github.com/RyanNgCT/RangeForce-SOC-Chall/blob/main/Email/images%20for%20email/Screenshot%202021-05-18%20at%2012.19.12%20PM.png)
 
-Using the tool listed, we can view without visitig the page that it presents a login screen rather similar to Google. We can thus confirm that a `phishing` attack is likely in this case. You can view the results at [this link](https://urlscan.io/result/0a087340-31aa-4e0e-953c-5bc9fd794837/)
+Using the tool listed, we can view without visiting the page that it presents a login screen rather similar to Google. We can thus confirm that a `phishing` attack is likely in this case. You can view the results at [this link](https://urlscan.io/result/0a087340-31aa-4e0e-953c-5bc9fd794837/).
 
 ---
 
@@ -80,6 +80,7 @@ Similar to the previous exercise, we can put the header in MXToolbox for analysi
 
 I kind of guessed this one. Since there was a pdf involved, I guessed that it had to do with `JavaScript`, but too bad pdfid and spidermonkey wasn't installed so we couldn't investigate further. (Source included [here](https://github.com/RyanNgCT/RangeForce-SOC-Chall/blob/main/Email/dependencies/invoice_pdf.js))
 
+
 ---
 
 ## 3. Account Hacked
@@ -91,6 +92,16 @@ Lana Banana got a threatening letter saying her account has been hacked. Help he
 ![img](https://github.com/RyanNgCT/RangeForce-SOC-Chall/blob/main/Email/images%20for%20email/Screenshot%202021-05-18%20at%2012.32.18%20PM.png)
 
 We can simply gain the answer to this from the `Received` field of the email file [here](https://github.com/RyanNgCT/RangeForce-SOC-Chall/blob/main/Email/dependencies/acc_hacked.eml) -- `serv1.youarehackzed.ga`.
+
+### Additional Exploration
+
+Furthermore, using MXToolbox, we get a SPF status of `SPF Record not published`, which suggests it is suspicious. Results [here](https://mxtoolbox.com/Public/Tools/EmailHeaders.aspx?huid=23d214bd-642a-4144-b945-8303ba42f9a5).
+
+![img](https://github.com/RyanNgCT/RangeForce-SOC-Chall/blob/main/Email/images%20for%20email/Screenshot%202021-05-23%20at%203.00.31%20PM.png)
+
+When we check ipinfo, the company listed is `Data Room, Inc`.
+
+![img](https://github.com/RyanNgCT/RangeForce-SOC-Chall/blob/main/Email/images%20for%20email/Screenshot%202021-05-23%20at%203.02.05%20PM.png)
 
 ---
 
@@ -111,6 +122,12 @@ Received: from vs.unitedrunway.org (www3189uj.sakura.ne.jp [133.242.140.203])
 	for <mark.bark@contoso.com>; Tue May 18 04:00:21 UTC 2021
 ```
 Answer: `133.242.140.203`.
+
+### Additional Exploration
+
+Additionally, using MXToolbox, we get a SPF status of `SPF Record not published`, which suggests it is suspicious. Results [here](https://mxtoolbox.com/Public/Tools/EmailHeaders.aspx?huid=47f26f02-5bb7-435b-b3f0-af286d2aa77c).
+
+![img](https://github.com/RyanNgCT/RangeForce-SOC-Chall/blob/main/Email/images%20for%20email/Screenshot%202021-05-23%20at%203.05.41%20PM.png)
 
 ---
 
