@@ -20,7 +20,7 @@ Here's proof that I completed all the levels and my badge awarded by RangeForce!
 
 ![img](https://github.com/RyanNgCT/RangeForce-SOC-Chall/blob/main/SOC%20Challenge%20Badge.png)
 
-Verify it here: https://www.credly.com/earner/earned/badge/92fb4d78-f888-4afa-8638-b777a7f80f8c
+Verify it here: https://www.credly.com/badges/92fb4d78-f888-4afa-8638-b777a7f80f8c
 
 ## Reflections
 
