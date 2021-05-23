@@ -74,11 +74,14 @@ This involved some digging through tools and knowledge of common IOCs (e.g. reg 
 https://pentestlab.blog/2019/10/01/persistence-registry-run-keys/) at `HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Run` and `HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Run` but there was nothing.
 
 ![img](https://github.com/RyanNgCT/RangeForce-SOC-Chall/blob/main/Splunk/images%20for%20splunk/Screenshot%202021-05-21%20at%209.50.29%20AM.png)
+
+For `HKLM`, there were a few legit keys set, so I moved on as that was not the IOC I was looking for.
 ![img](https://github.com/RyanNgCT/RangeForce-SOC-Chall/blob/main/Splunk/images%20for%20splunk/Screenshot%202021-05-21%20at%209.51.17%20AM.png)
 
 Opening Task Scheduler also found no suspicious scheduled processes (looked like legit Microsoft Processes) as shown below.
 
 ![img](https://github.com/RyanNgCT/RangeForce-SOC-Chall/blob/main/Splunk/images%20for%20splunk/Screenshot%202021-05-21%20at%209.57.52%20AM.png)
+
 ![img](https://github.com/RyanNgCT/RangeForce-SOC-Chall/blob/main/Splunk/images%20for%20splunk/Screenshot%202021-05-23%20at%201.56.10%20PM.png)
 
 I had some trouble opening WMI, but finally did it with `wmimgmt.svc`, and also found nothing substantial.
