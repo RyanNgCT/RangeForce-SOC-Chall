@@ -96,6 +96,10 @@ Create the rule file into the Desktop/rules directory and name the file malware.
 
 #### Question:  Write a Yara rule capable of detecting files that are actually malware in the /home/student/Desktop/suspicious directory. Create the Yara rule from the strings in /home/student/Desktop/intel/strings.txt to detect the malware. Save the rule into the /home/student/Desktop/rules/malware.yar file.
 
+So in this case we have to use the strings (IOCs) given in [intel.txt](https://github.com/RyanNgCT/RangeForce-SOC-Chall/blob/main/YARA/dependencies/intel_common.txt) in our yara rule constructed [here](https://github.com/RyanNgCT/RangeForce-SOC-Chall/blob/main/YARA/dependencies/malware.yar). Besides that we also need to be aware of the `MZ` header.
+
+Now we will run the yara rule to check which artifacts contain these strings and are thus likely the samples.
+
 ```
 student@desktop:~$ yara /home/student/Desktop/rules/malware.yar /home/student/Desktop/suspicious
 malware /home/student/Desktop/suspicious/64
