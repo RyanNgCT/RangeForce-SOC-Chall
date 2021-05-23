@@ -154,7 +154,7 @@ We can do a reverse search to determine the IP (probably `mx.fedex.com`) which i
 
 ![img](https://github.com/RyanNgCT/RangeForce-SOC-Chall/blob/main/Email/images%20for%20email/Screenshot%202021-05-18%20at%2012.50.20%20PM.png)
 
-When we upload the rtf file attached to the suspicious email to the platform, we can see that the vulnerability is registered as `CVE-2010-3333`.
+When we upload the [rtf file](https://github.com/RyanNgCT/RangeForce-SOC-Chall/blob/1954088151f4423f7bbdf2f1f5dc609329a4001b/Email/dependencies/sus_sanitized.html) attached to the suspicious email to the platform, we can see that the vulnerability is registered as `CVE-2010-3333`.
 
 ---
 
