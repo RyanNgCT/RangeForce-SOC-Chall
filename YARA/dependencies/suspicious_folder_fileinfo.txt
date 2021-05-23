@@ -1,0 +1,201 @@
+suspicious/1:       Web Open Font Format, flavor -1776579299, length 1453440865, version 61826.64812
+suspicious/10:      RPM v228.213
+suspicious/100:     PostScript document text
+suspicious/101:     PE32 executable (DLL) (GUI) Intel 80386, for MS Windows
+suspicious/102:     MPEG ADTS, layer III, v1, 192 kbps, 48 kHz, Monaural
+suspicious/103:     JPEG image data, JFIF standard 1.230, density 32396x8722, segment length 16, thumbnail 187x252
+suspicious/104:     data
+suspicious/105:     PE32 executable (GUI) Intel 80386, for MS Windows
+suspicious/106:     Zip archive data
+suspicious/107:     data
+suspicious/108:     Zip archive data
+suspicious/109:     zlib compressed data
+suspicious/11:      Audio file with ID3 version 2.185.149, footer present
+suspicious/110:     FLAC audio bitstream data, unknown version
+suspicious/111:     data
+suspicious/112:     data
+suspicious/113:     zlib compressed data
+suspicious/114:     PostScript document text
+suspicious/115:     JPEG image data, JFIF standard 1.118, density 10787x32989, segment length 16, thumbnail 94x56
+suspicious/116:     PE32+ executable (DLL) (console) x86-64, for MS Windows
+suspicious/117:     FLAC audio bitstream data, unknown version
+suspicious/118:     RIFF (little-endian) data, WAVE audio
+suspicious/119:     data
+suspicious/12:      data
+suspicious/120:     data
+suspicious/121:     PE32 executable (GUI) Intel 80386, for MS Windows
+suspicious/122:     Rich Text Format data, version 1, unknown character set
+suspicious/123:     RAR archive data, v5
+suspicious/124:     RIFF (little-endian) data, WAVE audio
+suspicious/125:     current ar archive
+suspicious/126:     data
+suspicious/127:     ELF 64-bit LSB shared object, x86-64, version 1 (SYSV), dynamically linked, interpreter /lib64/ld-linux-x86-64.so.2, BuildID[sha1]=64b58cd0c1096c023927be50d57433ac9cce43e6, for GNU/Linux 3.2.0, stripped
+suspicious/128:     ELF 64-bit LSB shared object, x86-64, version 1 (SYSV), dynamically linked, interpreter /lib64/ld-linux-x86-64.so.2, BuildID[sha1]=8dbe90dabcb03686af82845966ba507af42baeff, for GNU/Linux 3.2.0, stripped
+suspicious/129:     data
+suspicious/13:      data
+suspicious/130:     current ar archive
+suspicious/131:     GIF image data, version 89a, 9738 x
+suspicious/132:     ELF 64-bit LSB shared object, x86-64, version 1 (SYSV), dynamically linked, interpreter /lib64/ld-linux-x86-64.so.2, BuildID[sha1]=11e98ab64effe5cbea15c92224fc41c452a2a18a, for GNU/Linux 3.2.0, stripped
+suspicious/133:     data
+suspicious/134:     PE32 executable (GUI) Intel 80386, for MS Windows
+suspicious/135:     data
+suspicious/136:     data
+suspicious/137:     PDF document, version 1.7
+suspicious/138:     Microsoft Office Document
+suspicious/139:     RPM v93.135
+suspicious/14:      PE32 executable (DLL) (GUI) Intel 80386, for MS Windows
+suspicious/140:     PE32 executable (GUI) Intel 80386, for MS Windows
+suspicious/141:     PostScript document text
+suspicious/142:     EBML file
+suspicious/143:     PostScript document text
+suspicious/144:     data
+suspicious/145:     data
+suspicious/146:     Web Open Font Format, flavor 692602989, length 1530912886, version 52671.12454
+suspicious/147:     7-zip archive data, version 252.23
+suspicious/148:     Dalvik dex file version 035
+suspicious/149:     SQLite 3.x database, application id 3682206710, user version 874568484, last written using SQLite version 2122081084
+suspicious/15:      tcpdump capture file (big-endian) - version 64031.7860, capture length 1438641150)
+suspicious/150:     PE32 executable (GUI) Intel 80386, for MS Windows
+suspicious/151:     PDF document, version 1.4
+suspicious/152:     Rich Text Format data, version 1, unknown character set
+suspicious/153:     RIFF (little-endian) data, WAVE audio
+suspicious/154:     tcpdump capture file (big-endian) - version 35340.17229, capture length 1137314296)
+suspicious/155:     gzip compressed data, reserved method, ASCII, extra field, encrypted
+suspicious/156:     7-zip archive data, version 249.100
+suspicious/157:     GIF image data, version 89a, 20497 x 4461
+suspicious/158:     PE32 executable (DLL) (GUI) Intel 80386, for MS Windows
+suspicious/159:     Audio file with ID3 version 2.43.208, unsynchronized frames, experimental, footer present
+suspicious/16:      data
+suspicious/160:     data
+suspicious/161:     ELF 64-bit LSB shared object, x86-64, version 1 (SYSV), dynamically linked, interpreter /lib64/ld-linux-x86-64.so.2, BuildID[sha1]=29b889474342099d43cc61e61ac62c110d370795, for GNU/Linux 3.2.0, stripped
+suspicious/162:     data
+suspicious/163:     Dalvik dex file version 035
+suspicious/164:     Zip archive data
+suspicious/165:     PE32 executable (GUI) Intel 80386, for MS Windows
+suspicious/166:     EBML file
+suspicious/167:     RIFF (little-endian) data, WAVE audio
+suspicious/168:     tcpdump capture file (big-endian) - version 62431.27503, capture length -2109825485)
+suspicious/169:     FLAC audio bitstream data, unknown version
+suspicious/17:      ELF 64-bit LSB shared object, x86-64, version 1 (GNU/Linux), dynamically linked, interpreter /lib64/ld-linux-x86-64.so.2, BuildID[sha1]=ff56675c0dbc06f1881f72dbae2373b05261fa54, for GNU/Linux 3.2.0, stripped
+suspicious/170:     data
+suspicious/171:     ELF 64-bit LSB shared object, x86-64, version 1 (SYSV), dynamically linked, interpreter /lib64/ld-linux-x86-64.so.2, BuildID[sha1]=11e98ab64effe5cbea15c92224fc41c452a2a18a, for GNU/Linux 3.2.0, stripped
+suspicious/172:     current ar archive
+suspicious/173:     PDF document, version 1.4
+suspicious/174:     PE32 executable (GUI) Intel 80386 Mono/.Net assembly, for MS Windows
+suspicious/175:     data
+suspicious/176:     JPEG image data, JFIF standard 1.52, density 39793x20097, segment length 16, thumbnail 92x150
+suspicious/177:     ELF 64-bit LSB shared object, x86-64, version 1 (SYSV), dynamically linked, interpreter /lib64/ld-linux-x86-64.so.2, BuildID[sha1]=f7905a3106dd6f59c5e9f149daf4fa5da092e32f, for GNU/Linux 3.2.0, stripped
+suspicious/178:     RAR archive data, v5
+suspicious/179:     PE32 executable (DLL) (GUI) Intel 80386, for MS Windows
+suspicious/18:      data
+suspicious/180:     GIF image data, version 89a,
+suspicious/181:     MPEG ADTS, layer III, v1,  64 kbps, 48 kHz, Stereo
+suspicious/182:     gzip compressed data, unknown method, ASCII, extra field, has comment, encrypted
+suspicious/183:     PE32 executable (GUI) Intel 80386, for MS Windows
+suspicious/184:     ELF 64-bit LSB shared object, x86-64, version 1 (SYSV), dynamically linked, interpreter /lib64/ld-linux-x86-64.so.2, BuildID[sha1]=2255e9e4af227c7c09451eb0bb69d88801298971, for GNU/Linux 3.2.0, stripped
+suspicious/185:     PE32 executable (DLL) (GUI) Intel 80386, for MS Windows
+suspicious/186:     GIF image data, version 87a, 873
+suspicious/187:     JPEG image data, JFIF standard 1.09, density 19767x33448, segment length 16, thumbnail 217x156
+suspicious/188:     data
+suspicious/189:     Web Open Font Format, flavor -512436310, length -1452960996, version 64280.4691
+suspicious/19:      7-zip archive data, version 119.21
+suspicious/190:     MPEG ADTS, layer III, v1, 112 kbps, 48 kHz, Monaural
+suspicious/191:     RAR archive data, v5
+suspicious/192:     PE32 executable (GUI) Intel 80386, for MS Windows
+suspicious/193:     gzip compressed data, extra field, has comment, encrypted
+suspicious/194:     ELF 64-bit LSB shared object, x86-64, version 1 (SYSV), dynamically linked, interpreter /lib64/ld-linux-x86-64.so.2, BuildID[sha1]=5dc08f2c429d49078ee56d0cbb959691eb9faa83, for GNU/Linux 3.2.0, stripped
+suspicious/195:     ELF 64-bit LSB shared object, x86-64, version 1 (SYSV), dynamically linked, interpreter /lib64/ld-linux-x86-64.so.2, BuildID[sha1]=9f129a256c531e84ed58f135a55c823974234e0f, for GNU/Linux 3.2.0, stripped
+suspicious/196:     FLAC audio bitstream data, unknown version
+suspicious/197:     7-zip archive data, version 24.96
+suspicious/198:     data
+suspicious/199:     ELF 64-bit LSB shared object, x86-64, version 1 (SYSV), dynamically linked, interpreter /lib64/ld-linux-x86-64.so.2, BuildID[sha1]=7076850699d795adfc3a99a63011cf0781761b63, for GNU/Linux 3.2.0, stripped
+suspicious/2:       GIF image data, version 89a,
+suspicious/20:      data
+suspicious/200:     gzip compressed data, unknown method, ASCII, has CRC, extra field, has comment, encrypted, last modified: Wed Oct 21 16:48:49 2020, from Amiga
+suspicious/21:      current ar archive
+suspicious/22:      FLAC audio bitstream data, unknown version
+suspicious/23:      MPEG ADTS, layer III, v1,  56 kbps, 48 kHz, 2x Monaural
+suspicious/24:      PostScript document text
+suspicious/25:      current ar archive
+suspicious/26:      PDF document, version 1.4
+suspicious/27:      PE32 executable (GUI) Intel 80386 Mono/.Net assembly, for MS Windows
+suspicious/28:      FLAC audio bitstream data, unknown version
+suspicious/29:      gzip compressed data, reserved method, ASCII, extra field, encrypted, last modified: Fri Aug 29 02:47:50 2008
+suspicious/3:       , 48 kHz, Monaural
+suspicious/30:      MPEG ADTS, layer III, v1, 320 kbps, 32 kHz, Monaural
+suspicious/31:      data
+suspicious/32:      data
+suspicious/33:      PE32 executable (GUI) Intel 80386, for MS Windows
+suspicious/34:      data
+suspicious/35:      PDF document, version 1.4
+suspicious/36:      EBML file
+suspicious/37:      ELF 64-bit LSB shared object, x86-64, version 1 (GNU/Linux), dynamically linked, interpreter /lib64/ld-linux-x86-64.so.2, BuildID[sha1]=1c2d642ffb01d1894d3c7dba050fcd160580a3e1, for GNU/Linux 3.2.0, stripped
+suspicious/38:      JPEG image data, JFIF standard 1.164, density 2260x59842, segment length 16, thumbnail 175x23
+suspicious/39:      ELF 64-bit LSB executable, x86-64, version 1 (SYSV), dynamically linked, interpreter /lib64/ld-linux-x86-64.so.2, BuildID[sha1]=02526282ea6c4d6eec743ad74a1eeefd035346a3, for GNU/Linux 3.2.0, stripped
+suspicious/4:       GIF image data, version 89a,
+suspicious/40:      Microsoft Office Document
+suspicious/41:      EBML file
+suspicious/42:      Web Open Font Format, flavor 604840219, length -1114188438, version 24932.21093
+suspicious/43:      RAR archive data, v5
+suspicious/44:      ELF 64-bit LSB executable, x86-64, version 1 (GNU/Linux), statically linked, BuildID[sha1]=d1620e6d194715de7aba38a947f5e4e61f7ab0a6, for GNU/Linux 3.2.0, stripped
+suspicious/45:      RAR archive data, v5
+suspicious/46:      PE32 executable (GUI) Intel 80386, for MS Windows, Nullsoft Installer self-extracting archive
+suspicious/47:      data
+suspicious/48:      PE32 executable (GUI) Intel 80386 Mono/.Net assembly, for MS Windows
+suspicious/49:      data
+suspicious/5:       RIFF (little-endian) data, AVI
+suspicious/50:      PostScript document text
+suspicious/51:      MPEG sequence, v1, system multiplex
+suspicious/52:      MPEG sequence, v2, program multiplex
+suspicious/53:      RPM v171.25
+suspicious/54:      Dalvik dex file version 035
+suspicious/55:      RIFF (little-endian) data, WAVE audio
+suspicious/56:      Audio file with ID3 version 2.248.220, unsynchronized frames, extended header, experimental
+suspicious/57:      PostScript document text
+suspicious/58:      data
+suspicious/59:      current ar archive
+suspicious/6:       data
+suspicious/60:      PE32 executable (GUI) Intel 80386, for MS Windows
+suspicious/61:      PE32 executable (GUI) Intel 80386, for MS Windows
+suspicious/62:      current ar archive
+suspicious/63:      Ogg data UNKNOWN REVISION 203
+suspicious/64:      data
+suspicious/65:      data
+suspicious/66:      JPEG image data, JFIF standard 1.218, density 63726x56267, segment length 16, thumbnail 191x212
+suspicious/67:      data
+suspicious/68:      RIFF (little-endian) data, WAVE audio
+suspicious/69:      data
+suspicious/7:       data
+suspicious/70:      ELF 64-bit LSB shared object, x86-64, version 1 (GNU/Linux), dynamically linked, interpreter /lib64/ld-linux-x86-64.so.2, BuildID[sha1]=4c6d9f462c99536f57dbcfe11bd7da2beefb5d50, for GNU/Linux 3.2.0, stripped
+suspicious/71:      RIFF (little-endian) data, AVI
+suspicious/72:      PDF document, version 1.4
+suspicious/73:      Ogg data UNKNOWN REVISION 21
+suspicious/74:      Ogg data UNKNOWN REVISION 159
+suspicious/75:      data
+suspicious/76:      Rich Text Format data, version 1, unknown character set
+suspicious/77:      zlib compressed data
+suspicious/78:      data
+suspicious/79:      PDF document, version 1.4
+suspicious/8:       ELF 64-bit LSB shared object, x86-64, version 1 (SYSV), dynamically linked, interpreter /lib64/ld-linux-x86-64.so.2, BuildID[sha1]=ec434d18ccfd0a5fe46ed8da74120cd3f7a7ab8c, for GNU/Linux 3.2.0, stripped
+suspicious/80:      PE32 executable (GUI) Intel 80386, for MS Windows
+suspicious/81:      EBML file
+suspicious/82:      data
+suspicious/83:      data
+suspicious/84:      data
+suspicious/85:      data
+suspicious/86:      data
+suspicious/87:      PE32 executable (GUI) Intel 80386 Mono/.Net assembly, for MS Windows
+suspicious/88:      data
+suspicious/89:      ELF 64-bit LSB shared object, x86-64, version 1 (GNU/Linux), dynamically linked, interpreter /lib64/ld-linux-x86-64.so.2, BuildID[sha1]=3b38856575aa0c54bd28e9e3f06f2f0117304cfa, for GNU/Linux 3.2.0, stripped
+suspicious/9:       data
+suspicious/90:      ELF 64-bit LSB shared object, x86-64, version 1 (GNU/Linux), dynamically linked, interpreter /lib64/ld-linux-x86-64.so.2, BuildID[sha1]=a6fa95ba702602398f4c715c1c1f1905afe0e8d9, for GNU/Linux 3.2.0, stripped
+suspicious/91:      data
+suspicious/92:      data
+suspicious/93:      data
+suspicious/94:      data
+suspicious/95:      data
+suspicious/96:      data
+suspicious/97:      data
+suspicious/98:      data
+suspicious/99:      PE32 executable (DLL) (GUI) Intel 80386, for MS Windows
+suspicious/out.txt: ASCII text
