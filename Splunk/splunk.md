@@ -91,23 +91,47 @@ Using the Splunk Console with the results of `192.168.0.212`, we can answer the 
 
 #### Question 3: What is the full path of the archive that was created for data exfiltration?
 
+![img]()
 
+Answer: `C:\Windows\Temp\g0nna3XF1l7h15.tAR`
+
+#### Question 4: What application was used for the data exfiltration attempt?
+
+Answer: `scp`
+
+
+#### Question 5: What is the password for the new malicious user?
+
+Answer: `password123@`
+
+
+#### Question 6: How was the malicious user added to a group? (Format: Full command)
+
+Answer: `"C:\Windows\system32\net.exe" localgroup "Hyper-V Administrators" Palware /add`
 
 ---
 
-## 4. 
+## 4. Analyze Malware Stager
+After extracting all the necessary information from the IOCs you want to do dynamic analysis of the malware.
 
+The windows10 host is currently in a controlled environment. Windows Security has been restarted and its features are re-enabled. Knowing the malware stager location, you need to execute the stager and see what Windows Security will show.
+
+_Note: VirTool:Win32/DefenderTamperingRestore detection is related to Windows Security being disabled and re-enabled for the playthrough of this scenario, so in this particular case, ignore that detection._
+
+### DISCLAIMER: You generally should not execute any malware in an environment where it can spread within the network. Make sure that necessary precautions are in effect. For the purposes of the scenario consider the RangeForce module a sandbox.
+
+Go to `C:\ProgramData\Microsoft\Windows\Start Menu\Programs\StartUp` and execute the stager.
+
+#### Question 1: What is the severity of the detection?
+
+Open Defender and select `Threat History`. We can see that the severity is `Severe`
+
+#### Question 2: What is the name of the threat?
+
+The threat is `Virtool: Powershell/Empire.A
 
 ---
 
 ## 5. Delete the Stager
 
 Navigate to the corresponding directory and delete the `bat` file.
-
-
-
-C:\Windows\Temp\g0nna3XF1l7h15.tAR
-
-"C:\Windows\system32\net.exe" localgroup "Hyper-V Administrators" Palware /add
-
-https://pentestlab.blog/2019/10/01/persistence-registry-run-keys/
