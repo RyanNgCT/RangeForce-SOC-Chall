@@ -29,7 +29,7 @@ c) Execute the following script: C:\Tools\02. Restore-WinSecurity-functionality.
 
 Change into the Tools diectory and execute the first command in Powershell. Then launch Windows Defender GUI and under `Virus and Threat Protection`, click `Restart Now`. Thereafter, close Defender and enter the second command for execution in Powershell.
 
-![img]()
+![img](https://github.com/RyanNgCT/RangeForce-SOC-Chall/blob/main/Splunk/images%20for%20splunk/Screenshot%202021-05-21%20at%209.33.25%20AM.png)
 
 ---
 
@@ -45,6 +45,8 @@ You received an updated list of IOCs for today. Your daily process is to use Spl
 
 #### Question: 	Which of the IOCs returned events?
 
+![img](https://github.com/RyanNgCT/RangeForce-SOC-Chall/blob/main/Splunk/images%20for%20splunk/Screenshot%202021-05-19%20at%2010.34.43%20AM.png)
+
 This is a bit of a guessing game. We go go on splunk and under `Searching and Reporting`, search the IP addresses one by one. The answer is `192.168.0.212`.
 
 ---
@@ -54,6 +56,8 @@ This is a bit of a guessing game. We go go on splunk and under `Searching and Re
 Now that you have the IOC-related events in Splunk, you can pivot and sift through them.
 
 #### Question 1: What is the filename of the malware stager?
+
+![img](https://github.com/RyanNgCT/RangeForce-SOC-Chall/blob/main/Splunk/images%20for%20splunk/Screenshot%202021-05-21%20at%209.40.48%20AM.png)
 
 I got quite lost with this so someone suggested I look at the events in chronological order (Splunk displays it as reverse chronology by default). Sure enough, I was able to find a suspicious `LaunchPad.bat`.
 
@@ -69,21 +73,25 @@ What type of startup method was used to execute the stager?
 This involved some digging through tools and knowledge of common IOCs (e.g. reg keys created for persistence or tasks scheduled). Opening Registry Editor, by running `Win+R` followed by `regedit`, I checked `HKLM` and `HKCU` hives for run keys, commonly found as described in [this article](
 https://pentestlab.blog/2019/10/01/persistence-registry-run-keys/) at `HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Run` and `HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Run` but there was nothing.
 
-![img]()
-![img]()
+![img](https://github.com/RyanNgCT/RangeForce-SOC-Chall/blob/main/Splunk/images%20for%20splunk/Screenshot%202021-05-21%20at%209.50.29%20AM.png)
+![img](https://github.com/RyanNgCT/RangeForce-SOC-Chall/blob/main/Splunk/images%20for%20splunk/Screenshot%202021-05-21%20at%209.51.17%20AM.png)
 
 Opening Task Scheduler also found no suspicious scheduled processes (looked like legit Microsoft Processes) as shown below.
 
-![img]()
-![img]()
+![img](https://github.com/RyanNgCT/RangeForce-SOC-Chall/blob/main/Splunk/images%20for%20splunk/Screenshot%202021-05-21%20at%209.57.52%20AM.png)
+![img](https://github.com/RyanNgCT/RangeForce-SOC-Chall/blob/main/Splunk/images%20for%20splunk/Screenshot%202021-05-23%20at%201.56.10%20PM.png)
 
 I had some trouble opening WMI, but finally did it with `wmimgmt.svc`, and also found nothing substantial.
 
-![img]()
+![img](https://github.com/RyanNgCT/RangeForce-SOC-Chall/blob/main/Splunk/images%20for%20splunk/Screenshot%202021-05-21%20at%209.55.11%20AM.png)
 
 [This article](https://superuser.com/questions/1010345/how-to-find-all-startup-programs-on-windows-10) suggested using autoruns to detect startup programs and surely, the suspicious batch file was found in another registry key `HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Shell Folders\Common Startup`!
 
-![img]()
+![img](https://github.com/RyanNgCT/RangeForce-SOC-Chall/blob/main/Splunk/images%20for%20splunk/Screenshot%202021-05-23%20at%201.59.13%20PM.png)
+
+Q1 & 2 answers:
+
+![img](https://github.com/RyanNgCT/RangeForce-SOC-Chall/blob/main/Splunk/images%20for%20splunk/Screenshot%202021-05-21%20at%209.57.08%20AM.png)
 
 \----------------------------------------------------------------------------------------------------
 
@@ -91,7 +99,7 @@ Using the Splunk Console with the results of `192.168.0.212`, we can answer the 
 
 #### Question 3: What is the full path of the archive that was created for data exfiltration?
 
-![img]()
+![img](https://github.com/RyanNgCT/RangeForce-SOC-Chall/blob/main/Splunk/images%20for%20splunk/Screenshot%202021-05-19%20at%2010.47.37%20AM.png)
 
 Answer: `C:\Windows\Temp\g0nna3XF1l7h15.tAR`
 
@@ -108,6 +116,10 @@ Answer: `password123@`
 #### Question 6: How was the malicious user added to a group? (Format: Full command)
 
 Answer: `"C:\Windows\system32\net.exe" localgroup "Hyper-V Administrators" Palware /add`
+
+Q3 - 6 Answers:
+
+![img](https://github.com/RyanNgCT/RangeForce-SOC-Chall/blob/main/Splunk/images%20for%20splunk/Screenshot%202021-05-19%20at%2011.13.07%20AM.png)
 
 ---
 
@@ -128,7 +140,11 @@ Open Defender and select `Threat History`. We can see that the severity is `Seve
 
 #### Question 2: What is the name of the threat?
 
-The threat is `Virtool: Powershell/Empire.A
+![img](https://github.com/RyanNgCT/RangeForce-SOC-Chall/blob/main/Splunk/images%20for%20splunk/Screenshot%202021-05-21%20at%2010.02.51%20AM.png)
+
+The threat is `Virtool: Powershell/Empire.A`. We can ignore the other detection as stated in the background info.
+
+![img](https://github.com/RyanNgCT/RangeForce-SOC-Chall/blob/main/Splunk/images%20for%20splunk/Screenshot%202021-05-21%20at%2010.03.21%20AM.png)
 
 ---
 
