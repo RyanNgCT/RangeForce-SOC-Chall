@@ -11,8 +11,6 @@ You need to find out whether it was disabled for malicious purposes and if so, w
 
 You will investigate the possible compromise using Splunk SIEM solution.
 
-*The suspicious batch file can be found [here](https://github.com/RyanNgCT/RangeForce-SOC-Chall/blob/main/Splunk/dependencies/LaunchPad.bat)*
-
 
 ## 1. Restore Windows Security
 You have been notified that the Windows Security AntiSpyware module has been disabled on windows10.
@@ -156,3 +154,8 @@ The threat is `Virtool: Powershell/Empire.A`. We can ignore the other detection 
 ## 5. Delete the Stager
 
 Navigate to the corresponding directory and delete the `bat` file.
+
+---
+Be warn that this is *real* malware!
+
+*The suspicious batch file can be found [here](https://github.com/RyanNgCT/RangeForce-SOC-Chall/blob/main/Splunk/dependencies/LaunchPad.bat)*
