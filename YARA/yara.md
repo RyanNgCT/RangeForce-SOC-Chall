@@ -2,6 +2,8 @@
 
 It is early 2017 and there is chatter on security forums about new malware spreading around like wildfire. You have gotten hold of some samples of the malware. Your goal is to analyze it and prepare yourself to be able to detect it in the future.
 
+Resources used: [Gerald Auger Yara Video](https://www.youtube.com/watch?v=BM23_H2GGMA)
+
 ## 1. Strings
 
 The samples are located in the /home/student/Desktop/sample directory and aptly named 1, 2 and 3.
